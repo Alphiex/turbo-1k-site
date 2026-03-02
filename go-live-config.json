@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://kiddio.fun/turbo-1k/offer-page.html",
+  "contactEmail": "mike@kiddio.fun",
+  "campaign": "turbo_1k_challenge",
+  "channels": [
+    { "id": "x", "name": "X / Twitter", "utmMedium": "social" },
+    { "id": "linkedin", "name": "LinkedIn", "utmMedium": "social" },
+    { "id": "reddit", "name": "Reddit", "utmMedium": "community" },
+    { "id": "telegram", "name": "Telegram", "utmMedium": "community" }
+  ]
+}

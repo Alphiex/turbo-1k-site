@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Turbo AI Ops Starter — Proof-First Early Access</title>
+  <meta name="description" content="Proof-first early access for Turbo AI Ops Starter: samples, deliverables, and clear onboarding."/>
+  <style>
+    :root {
+      --bg: #070b18;
+      --panel: #0f1833;
+      --panel-2: #111d3f;
+      --text: #eaf0ff;
+      --muted: #b7c3e9;
+      --accent: #7dd4ff;
+      --accent-2: #8effbe;
+      --danger: #ff8da1;
+      --border: #2b3b6b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at 85% -10%, #213975 0, var(--bg) 40%);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 28px auto 48px; padding: 0 16px; }
+    .panel {
+      background: linear-gradient(180deg, rgba(16,24,51,.96), rgba(10,16,34,.96));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.35);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    h1,h2,h3 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: 42px; letter-spacing: -0.5px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 18px; }
+    p { margin: 0 0 12px; color: var(--muted); }
+    ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    li { margin: 6px 0; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; border: 1px solid #3a589a; color: var(--accent);
+      border-radius: 999px; padding: 6px 10px; background: rgba(125,212,255,.08);
+      margin-right: 8px; margin-bottom: 10px;
+    }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 12px; }
+    .proof-card {
+      background: rgba(17,29,63,.65);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .proof-card a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .proof-meta { font-size: 12px; color: #a6b6e6; }
+    .price {
+      font-size: 28px;
+      font-weight: 700;
+      color: #f1f5ff;
+      margin-top: 6px;
+    }
+    .subtle-warn {
+      border: 1px solid #4e4064;
+      background: rgba(255,141,161,.08);
+      color: #ffd5dd;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+    label { display: block; margin-bottom: 6px; font-size: 13px; color: #d7e1ff; }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #0d1734;
+      color: var(--text);
+      font: inherit;
+    }
+    textarea { min-height: 90px; resize: vertical; }
+    .form-grid { display: grid; gap: 12px; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .btn {
+      appearance: none; border: 0; border-radius: 10px; padding: 11px 14px;
+      font-weight: 700; cursor: pointer; text-decoration: none;
+      color: #031023; background: linear-gradient(90deg,var(--accent),var(--accent-2));
+    }
+    .btn.secondary {
+      background: transparent; color: var(--accent); border: 1px solid #35539a;
+    }
+    .tiny { font-size: 12px; color: #9fb0e2; }
+    .stream-links a {
+      display: inline-block;
+      margin: 4px 6px 0 0;
+      font-size: 12px;
+      color: var(--accent);
+      border: 1px solid #35539a;
+      border-radius: 999px;
+      padding: 6px 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <span class="pill">Traffic source: <strong id="source-pill">direct</strong></span>
+      <span class="pill">Proof-first launch</span>
+      <h1>Turbo AI Ops Starter</h1>
+      <p>You were right: people only pay when proof is obvious. This page now shows real sample deliverables and exactly what happens after signup.</p>
+      <div class="grid-2" style="margin-top:10px;">
+        <div>
+          <h3>What buyers get weekly</h3>
+          <ul>
+            <li>1 action-focused execution brief</li>
+            <li>3 practical automation templates</li>
+            <li>KPI tracker + review checklist</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Early access price</h3>
+          <div class="price">$19/month</div>
+          <p>First 50 users lock this price.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Proof you can inspect now</h2>
+      <p>No fake testimonials. Click through sample artifacts directly:</p>
+      <div class="grid-2">
+        <article class="proof-card">
+          <h3>Sample #1 — KPI Weekly Report</h3>
+          <p class="proof-meta">Shows the reporting format and operator notes.</p>
+          <a href="./samples/sample-kpi-weekly-report.md" target="_blank" rel="noreferrer">Open sample report</a>
+        </article>
+        <article class="proof-card">
+          <h3>Sample #2 — Automation Template</h3>
+          <p class="proof-meta">Template for source ingestion + summary output.</p>
+          <a href="./samples/sample-automation-template.md" target="_blank" rel="noreferrer">Open template</a>
+        </article>
+        <article class="proof-card">
+          <h3>Sample #3 — Distribution Pack</h3>
+          <p class="proof-meta">Post copy bundle for X/LinkedIn/Reddit launch.</p>
+          <a href="./distribution-copy-2026-03-02.md" target="_blank" rel="noreferrer">Open distribution copy</a>
+        </article>
+      </div>
+      <div class="subtle-warn">Current proof is pre-sale sample work, not customer case studies yet. First paying-user proof will be added after sale #1.</div>
+    </section>
+
+    <section class="panel">
+      <h2>Join Early Access</h2>
+      <p>Submit details and you’ll be prefilled into a tracked intake message.</p>
+      <form id="signup-form" class="form-grid">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" placeholder="Your name"/>
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"/>
+        </div>
+        <div>
+          <label for="goal">Primary goal</label>
+          <select id="goal" name="goal">
+            <option value="Revenue growth">Revenue growth</option>
+            <option value="Save ops time">Save ops time</option>
+            <option value="Content scale">Content scale</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="usecase">What should be automated first?</label>
+          <textarea id="usecase" name="usecase" placeholder="Example: weekly KPI reports, support triage, content pipeline"></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Join Early Access</button>
+          <a class="btn secondary" href="mailto:mike@kiddio.fun?subject=Turbo%20AI%20Ops%20Starter%20Question">Ask a question</a>
+        </div>
+      </form>
+      <p class="tiny">No auto-email blast. This is manual, tracked intake only.</p>
+
+      <div class="stream-links" aria-label="Tracked source links">
+        <a href="?src=x">X / Twitter link</a>
+        <a href="?src=linkedin">LinkedIn link</a>
+        <a href="?src=reddit">Reddit link</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const source = params.get('src') || params.get('utm_source') || 'direct';
+      const sourcePill = document.getElementById('source-pill');
+      if (sourcePill) sourcePill.textContent = source;
+
+      const form = document.getElementById('signup-form');
+      form?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name')?.value.trim() || 'Not provided';
+        const email = document.getElementById('email')?.value.trim();
+        const goal = document.getElementById('goal')?.value || 'Not provided';
+        const usecase = document.getElementById('usecase')?.value.trim() || 'Not provided';
+
+        if (!email) return;
+
+        const subject = `Turbo AI Ops Starter - Early Access (${source})`;
+        const body = [
+          'New early access lead',
+          '',
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Goal: ${goal}`,
+          `Source: ${source}`,
+          `Use case: ${usecase}`,
+          '',
+          `Captured at: ${new Date().toISOString()}`
+        ].join('\n');
+
+        window.location.href = `mailto:mike@kiddio.fun?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    })();
+  </script>
+</body>
+</html>
