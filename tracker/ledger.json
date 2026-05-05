@@ -44,12 +44,27 @@
     {
       "id": "polymarket-research",
       "name": "Polymarket Research Position",
-      "status": "active",
+      "status": "pending-bet",
       "started": "2026-05-05",
       "pivot_rule": {
         "min_monthly_revenue_usd": 50,
         "evaluate_after_days": 30,
         "action_if_below": "kill"
+      },
+      "pending_position": {
+        "id": "research-position-001",
+        "market": "Which company has best AI model end of June?",
+        "outcome": "YES — Anthropic",
+        "market_url": "https://polymarket.com/event/which-company-has-best-ai-model-end-of-june/will-anthropic-have-the-best-ai-model-at-the-end-of-june-2026",
+        "resolution_date": "2026-06-30",
+        "resolution_source": "lmarena.ai overall leaderboard at 12:00 PM ET",
+        "stake_usd": 5,
+        "entry_price_usd": 0.64,
+        "shares_at_entry": 7.81,
+        "max_payout_usd": 7.81,
+        "thesis_doc": "polymarket/research-position-001.md",
+        "snapshot_taken": "2026-05-05",
+        "placed": false
       },
       "entries": [
         {
