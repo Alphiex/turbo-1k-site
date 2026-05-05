@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "created": "2026-05-05",
+  "currency": "USD",
+  "streams": [
+    {
+      "id": "service-arbitrage",
+      "name": "Service Arbitrage (Upwork/Fiverr)",
+      "status": "active",
+      "started": "2026-05-05",
+      "pivot_rule": {
+        "min_monthly_revenue_usd": 50,
+        "evaluate_after_days": 30,
+        "action_if_below": "kill"
+      },
+      "entries": [
+        {
+          "date": "2026-05-05",
+          "income_usd": 0,
+          "time_hours": 0,
+          "notes": "initial"
+        }
+      ]
+    },
+    {
+      "id": "micro-saas",
+      "name": "Micro-SaaS",
+      "status": "active",
+      "started": "2026-05-05",
+      "pivot_rule": {
+        "min_monthly_revenue_usd": 50,
+        "evaluate_after_days": 30,
+        "action_if_below": "kill"
+      },
+      "entries": [
+        {
+          "date": "2026-05-05",
+          "income_usd": 0,
+          "time_hours": 0,
+          "notes": "initial"
+        }
+      ]
+    },
+    {
+      "id": "polymarket-research",
+      "name": "Polymarket Research Position",
+      "status": "active",
+      "started": "2026-05-05",
+      "pivot_rule": {
+        "min_monthly_revenue_usd": 50,
+        "evaluate_after_days": 30,
+        "action_if_below": "kill"
+      },
+      "entries": [
+        {
+          "date": "2026-05-05",
+          "income_usd": 0,
+          "time_hours": 0,
+          "notes": "initial —  research bet"
+        }
+      ]
+    }
+  ]
+}
