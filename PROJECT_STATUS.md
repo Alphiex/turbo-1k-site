@@ -10,10 +10,10 @@ reallocate to top-performing $/hour stream. NO illegal activity, NO capital
 concentration in one stream, NO sports betting (lives under CGO), and NO
 emailing people (existing project rule).
 
-## Status snapshot (2026-05-04)
+## Status snapshot (2026-05-05)
 - Repo: github.com/Alphiex/turbo-1k-site
 - Stack: Static HTML + JS landing page (no framework yet)
-- Last commit: proof-first redesign
+- Last commit: 2e502e7 — tracking infrastructure
 - Telegram topic: 123 (only output channel — NO email per project rules)
 
 ## Initial $50 research-budget allocation
@@ -35,20 +35,12 @@ emailing people (existing project rule).
 - [x] Distribution copy drafts (go-live + 2026-03-02)
 - [x] Go-live checklist + config
 - [x] Sample copy + sample artifacts
+- [x] **Tracking infrastructure** — `tracker/` dir: ledger.json (3 streams), dashboard.html, update-ledger.js CLI, ledger.js helper, README.md — commit `2e502e7` (2026-05-05)
 
 ## Next 3 deliverables (in order)
-1. **Set up tracking infrastructure** — single source-of-truth ledger (SQLite +
-   tiny dashboard, or Google Sheet via API) that tracks per-stream income,
-   time-spent, and $/hour. Without this, the day-30 pivot rule can't be
-   enforced.
-2. **Launch service-arbitrage stream** — Upwork or Fiverr profile, 3 posted
-   gigs, first $1 of revenue captured to validate the loop end-to-end. Profile
-   leverages Claude Code as the labor source (positioning: AI-augmented
-   developer-for-hire, code reviews, SEO audits, custom scripts).
-3. **Ship one micro-SaaS** — domain, Vercel deploy, $5/mo Stripe checkout,
-   Reddit/Indie Hackers launch post. First paying user is the milestone, even
-   if it's $5. Niche selection: agent picks based on Reddit/IH problem
-   listening unless Mike specifies.
+1. **Launch service-arbitrage stream** ⚠️ BLOCKED — requires persona decision (see Blocked section below). Upwork or Fiverr profile, 3 posted gigs, first $1 of revenue captured to validate the loop end-to-end. Profile leverages Claude Code as the labor source (positioning: AI-augmented developer-for-hire, code reviews, SEO audits, custom scripts).
+2. **Ship one micro-SaaS** ⚠️ BLOCKED — requires Stripe/PayPal decision and niche decision (see Blocked section). Domain, Vercel deploy, $5/mo Stripe checkout, Reddit/Indie Hackers launch post. First paying user is the milestone, even if it's $5.
+3. **First Polymarket research position** — place the $5 labeled research bet, document thesis, track outcome. No decisions needed from Mike for this one — can execute now if deliverable 1 is blocked.
 
 ## Realistic timing
 - Month 1-2: setup + early gigs ($50-300/mo)
@@ -58,11 +50,9 @@ emailing people (existing project rule).
 The cron loop reports progress against this curve, not "1k by week 4."
 
 ## Blocked / decisions needed from Mike
-- Persona: agent posts publicly under your name (Twitter, Upwork bio, Reddit
-  IH) OR anonymous personas? Affects launch strategy substantially.
-- Stripe / PayPal / payment processor preference for SaaS billing
-- Affiliate content niche — let agent pick, or specify (golf? AI tools?
-  React Native?)
+- **PERSONA** (blocks deliverable 1 — service-arbitrage launch): Agent posts publicly under your name (Twitter, Upwork bio, Reddit IH) OR anonymous personas? Affects launch strategy substantially.
+- **PAYMENT PROCESSOR** (blocks deliverable 2 — micro-SaaS): Stripe / PayPal / other preference for SaaS billing?
+- **AFFILIATE NICHE** (blocks deliverable 2 — micro-SaaS niche selection): Let agent pick based on Reddit/IH problem listening, or specify (golf? AI tools? React Native?)
 
 ## Delivery rules
 - Use Claude Code via ACPX for all dev work; `frontend-design` skill for any UI
